@@ -1,5 +1,6 @@
 // src/app/layout.tsx
 import { NavBar } from "@/components/navBar";
+import Footer from "@/components/footer";
 import "./globals.css";
 import { Roboto } from "next/font/google";
 
@@ -17,9 +18,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${roboto.className}`}>
-        <NavBar/>
-        {children}
+      <body className={`${roboto.className} bg-stone-950 text-white`}>
+        {/* Navbar fijo */}
+        <NavBar />
+
+        {/* Contenido con espacio arriba */}
+        <main className="pt-20">{children}</main>
+
+        <Footer/>
       </body>
     </html>
   );

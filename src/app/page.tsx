@@ -1,6 +1,6 @@
 export default function Home() {
   return (
-    <div className="h-screen w-full relative bg-gradient-to-br from-stone-950 via-stone-900 to-stone-800 overflow-hidden mt-8">
+    <div className="h-screen w-full relative bg-gradient-to-br from-stone-950 via-stone-900 to-stone-800 overflow-hidden">
       
       {/* Fondo decorativo con forma diagonal */}
       <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-tr from-pink-900/30 to-stone-900/20 rotate-[-12deg] origin-top-left"></div>
