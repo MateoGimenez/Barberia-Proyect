@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Home() {
   return (
     <div className="h-screen w-full relative bg-gradient-to-br from-stone-950 via-stone-900 to-stone-800 overflow-hidden">
@@ -16,9 +18,9 @@ export default function Home() {
           <p className="text-gray-300 text-lg md:text-xl max-w-lg">
             Tu barbería premium en la ciudad, donde estilo y cuidado personal se encuentran.
           </p>
-          <button className="mt-4 px-8 py-3 rounded-full bg-pink-600 hover:bg-pink-500 transition-all shadow-lg text-lg font-medium self-center md:self-start">
+          <Link href='/reservar' className="mt-4 px-8 py-3 rounded-full bg-pink-600 hover:bg-pink-500 transition-all shadow-lg text-lg font-medium self-center md:self-start">
             Reservar Cita
-          </button>
+          </Link>
         </div>
 
         {/* Imagen decorativa */}

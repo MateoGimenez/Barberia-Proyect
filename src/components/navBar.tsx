@@ -27,11 +27,11 @@ export function NavBar() {
         </div>
 
         {/* Botón CTA */}
-        <div className="hidden md:block">
+        <Link href='/reservar' className="hidden md:block">
           <button className="px-5 py-2 rounded-full bg-pink-600 hover:bg-pink-500 transition-colors cursor-pointer shadow-md">
             Reservar Cita
           </button>
-        </div>
+        </Link>
 
         {/* Menu Hamburguesa Movile */}
         <div className="md:hidden">
