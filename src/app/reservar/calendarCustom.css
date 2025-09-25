@@ -1,34 +1,40 @@
+/* Fondo general */
 .react-calendar {
   border: none;
-  background: rgb(255, 255, 255);
-  font-family: inherit;
-  width: 100%;
+  border-radius: 12px;
+  background: #1f1f1f;
+  color: white;
+  padding: 1rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
 }
 
+.react-calendar__navigation__label button:hover{
+  color: blue;
+  background-color: #f6339a;
+}
+
+/* Días */
 .react-calendar__tile {
-  padding: 1rem 0.5rem;
   border-radius: 8px;
-  transition: all 0.2s ease;
+  padding: 0.75rem;
+  transition: background 0.2s ease;
+  background: #1f1f1f;
 }
 
-.react-calendar__tile:enabled:hover {
-  background: #f472b6; /* rosa */
-  color: rgb(0, 0, 0);
+.react-calendar__tile--active:hover{
+  background: #f6339a;
 }
 
+/* Día seleccionado */
 .react-calendar__tile--active {
-  background: #db2777 !important; /* rosa fuerte */
-  color: rgb(0, 0, 0) !important;
-}
-
-.react-calendar__navigation button {
-  color: #111;
+  background: #f6339a; 
+  color: white;
   font-weight: bold;
 }
 
-.react-calendar__month-view__weekdays {
-  text-transform: uppercase;
-  font-size: 0.75rem;
-  font-weight: 600;
-  color: #6b7280; /* gris */
+/* Día deshabilitado */
+.react-calendar__tile:disabled {
+  background: #333;
+  color: #777;
+  cursor: not-allowed;
 }
