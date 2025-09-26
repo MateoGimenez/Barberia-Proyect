@@ -1,3 +1,4 @@
+import ListaBarberos from "@/components/listBarberos/Barberos";
 export default function Nosotros() {
   return (
     <section className="h-screen flex justify-center items-center bg-gradient-to-br from-stone-950 via-stone-900 to-stone-800 text-white px-6">
